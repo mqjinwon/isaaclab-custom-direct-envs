@@ -1,4 +1,4 @@
-# IsaacLab Custom Direct envs
+# IsaacLab Custom Direct Envs
 
 [![IsaacSim](https://img.shields.io/badge/IsaacSim-4.5-blue)](https://developer.nvidia.com/isaac-sim)
 [![IsaacLab](https://img.shields.io/badge/IsaacLab-2.0.2-green)](https://github.com/NVIDIA-Omniverse/IsaacSim-ros_workspaces)
