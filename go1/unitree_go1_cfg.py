@@ -142,16 +142,16 @@ class UnitreeGo1FlatEnvCfg(DirectRLEnvCfg):
     contact_sensor: ContactSensorCfg = ContactSensorCfg(prim_path="/World/envs/env_.*/Robot/.*", history_length=3, track_air_time=True)
 
     # reward scales
-    lin_vel_reward_scale = 1.0
-    yaw_rate_reward_scale = 0.5
+    lin_vel_reward_scale = 1.5
+    yaw_rate_reward_scale = 0.75
     z_vel_reward_scale = -2.0
     ang_vel_reward_scale = -0.05
-    joint_torque_reward_scale = -2.5e-5
+    joint_torque_reward_scale = -0.0002
     joint_accel_reward_scale = -2.5e-7
     action_rate_reward_scale = -0.01
-    feet_air_time_reward_scale = 0.5
-    undesired_contact_reward_scale = -1.0
-    flat_orientation_reward_scale = -5.0
+    feet_air_time_reward_scale = 0.01
+    undesired_contact_reward_scale = 0.0
+    flat_orientation_reward_scale = 0.0
 
 @configclass
 class UnitreeGo1FlatEnvCfg_PLAY(UnitreeGo1FlatEnvCfg):
@@ -211,9 +211,6 @@ class UnitreeGo1RoughEnvCfg(UnitreeGo1FlatEnvCfg):
         debug_vis=False,
         mesh_prim_paths=["/World/ground"],
     )
-
-    # reward scales (override from flat config)
-    flat_orientation_reward_scale = 0.0
 
 
 @configclass
