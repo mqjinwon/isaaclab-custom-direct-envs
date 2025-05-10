@@ -15,6 +15,11 @@ folders=$(find . -maxdepth 1 -type d ! -name ".*" ! -name "$(basename $(pwd))")
 # Create symbolic links for each folder
 for folder in $folders; do
     folder_name=$(basename "$folder")
+
+    if [[ "$folder_name" == "algorithms" ]]; then
+        continue
+    fi
+
     target_dir="$ISAACLAB_DIR/source/isaaclab_tasks/isaaclab_tasks/direct/$folder_name"
     
     # Create symbolic link if it doesn't already exist
