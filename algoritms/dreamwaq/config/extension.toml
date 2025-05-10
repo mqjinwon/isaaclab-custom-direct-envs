@@ -1,0 +1,16 @@
+[package]
+version = "0.0.1"
+
+# Description
+title = "dreamwaq"
+description="DreamWAQ with rsl_rl"
+readme  = "docs/README.md"
+repository = "https://github.com/mqjinwon/isaaclab-custom-direct-envs"
+category = "robotics"
+keywords = ["robotics", "rl", "wrappers", "learning"]
+
+[core]
+reloadable = false
+
+[[python.module]]
+name = "dreamwaq"
