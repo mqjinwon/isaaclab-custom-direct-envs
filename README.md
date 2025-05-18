@@ -32,5 +32,6 @@ By following this process, you can easily add new environments to IsaacLab and m
 Currently, we have only created the go1 environment, and an example command for it is provided below.
 
 ```bash
-python scripts/reinforcement_learning/rsl_rl/train.py --task=Isaac-Velocity-Flat-Unitree-Go1-Direct-v0 --video --video_interval 500 --video_length 250 --num_envs 4096
+cd isaaclab-custom-direct-envs
+python run/train.py --task=Isaac-Velocity-Flat-Unitree-Go1-Direct-v0 --video --video_interval 500 --video_length 250 --num_envs 4096
 ```
