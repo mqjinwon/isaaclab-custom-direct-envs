@@ -28,6 +28,6 @@
 #
 # Copyright (c) 2021 ETH Zurich, Nikita Rudin
 
-from .on_policy_runner import OnPolicyRunnerWAQ, OnPolicyRunnerEst
+from .rms import RunningMeanStd
 
-__all__ = ["OnPolicyRunnerWAQ", "OnPolicyRunnerEst"]
+__all__ = ["RunningMeanStd"]

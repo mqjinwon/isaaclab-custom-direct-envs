@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: dreamwaq
+Version: 0.0.1
+Summary: DreamWAQ with rsl_rl
+Home-page: https://github.com/mqjinwon/isaaclab-custom-direct-envs
+Author: Jinwon Kim
+Maintainer: Jinwon Kim
+Keywords: robotics,rl,wrappers,learning
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Isaac Sim :: 4.5.0
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: torch==2.5.1
+Requires-Dist: torchvision>=0.14.1
+Requires-Dist: protobuf<5.0.0,>=3.20.2
+Requires-Dist: hydra-core
+Requires-Dist: h5py
+Requires-Dist: tensorboard
+Requires-Dist: moviepy
+Requires-Dist: pillow==11.0.0
+Provides-Extra: rsl-rl
+Requires-Dist: rsl-rl-lib==2.3.1; extra == "rsl-rl"
+Provides-Extra: rsl-rl
+Requires-Dist: rsl-rl-lib==2.3.1; extra == "rsl-rl"
+Dynamic: author
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: maintainer
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

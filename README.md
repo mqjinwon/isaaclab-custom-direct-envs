@@ -35,3 +35,14 @@ Currently, we have only created the go1 environment, and an example command for 
 cd isaaclab-custom-direct-envs
 python run/train.py --task=Isaac-Velocity-Flat-Unitree-Go1-Direct-v0 --video --video_interval 500 --video_length 250 --num_envs 4096
 ```
+
+## Algorithm 설치하기
+
+각 알고리즘 폴더로 들어가서 설치를 하면 된다.
+
+```bash
+pip3 install .
+```
+
+### 알고리즘 리스트
+- [DreamwaQ](algorithms/dreamwaq)
